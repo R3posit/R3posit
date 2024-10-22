@@ -1,3 +1,31 @@
+name: Generate Snake
+
+on:
+
+  schedule:
+
+      # every 6 hours
+
+    - cron: "0 */6 * * *"
+
+workflow_dispatch:
+  
+  
+  The sequence of runs in this workflow:
+
+
+jobs:
+
+  # This workflow contains a single job called "build"
+
+  build:
+
+    # The type of runner that the job will run on
+
+    runs-on: ubuntu-latest
+
+
+
 # Steps represent a sequence of tasks that will be executed as part of the job
 steps:
 
@@ -8,7 +36,7 @@ steps:
   - uses: Platane/snk@master
     id: snake-gif
     with:
-      github_user_name: R3posit
+      github_user_name: mishmanners
       # these next 2 lines generate the files on a branch called "output". This keeps the main branch from cluttering up.
       gif_out_path: dist/github-contribution-grid-snake.gif
       svg_out_path: dist/github-contribution-grid-snake.svg
