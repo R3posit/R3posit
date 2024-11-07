@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "0 0 * * *"  # Her gün saat 00:00'da çalışır
   workflow_dispatch:
-  
+
 permissions:
   contents: write  # 'write' izni vermek, değişiklik yapabilmek için gereklidir
 
@@ -16,6 +16,8 @@ jobs:
       # Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.MY_GITHUB_TOKEN }}  # Token'ı buraya ekliyoruz
 
       # Platane SNK Action: Yılan oyunu görselini oluştur
       - name: Generate Snake Game from GitHub Contributions
