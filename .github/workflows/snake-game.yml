@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "0 0 * * *"  # Her gün saat 00:00'da çalışır
   workflow_dispatch:
+  
+permissions:
+  contents: write  # 'write' izni vermek, değişiklik yapabilmek için gereklidir
 
 jobs:
   generate-snake:
