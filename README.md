@@ -1,4 +1,5 @@
 ## Hi there 👋
+![GitHub Snake GIF](dist/ocean.gif)
 
 <!--
 **R3posit/R3posit** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
