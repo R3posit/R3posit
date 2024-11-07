@@ -31,7 +31,4 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add dist/
           git commit -m "Add generated snake game images"
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub token'ı burada kullanılıyor
-          MY_SECRET_TOKEN: ${{ secrets.MY_SECRET_TOKEN }}  # Özel secret token'ı
+          git push https://x-access-token:${{ secrets.MY_GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
