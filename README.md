@@ -1,5 +1,5 @@
 <div align="center" style="font-size: 50px; font-weight: bold;">
-  Selam👋
+  Hi👋
 </div>
 
 <div align="center">
